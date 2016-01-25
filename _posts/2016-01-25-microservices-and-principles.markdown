@@ -2,7 +2,7 @@
 layout: post
 title:  "Microservices and Principles"
 date:   2016-01-25 15:39:33 +0000
-categories: jekyll update
+categories: microservices
 ---
 
 Microservices are Loosely coupled service oriented architecture with [Bounded Contexts][Bounded-Context].
