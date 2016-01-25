@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Microservices and Patterns"
+title:  "Microservices and Principles"
 date:   2016-01-25 15:39:33 +0000
 categories: jekyll update
 ---
