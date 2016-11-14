@@ -32,10 +32,10 @@ All the above Messagin Systems (aka Messaging Brokers)  provide publish and subs
 
   popular Stream Processing Frameworks
   
-  - [Apache Storm](http://storm.apache.org/)
-  - [Samza](http://samza.apache.org/)
-  - [Spark Streaming](http://spark.apache.org/streaming/)
-  - [kafka Streams](http://docs.confluent.io/3.0.0/streams/)
+  -  [Apache Storm](http://storm.apache.org/)
+  -  [Samza](http://samza.apache.org/)
+  -  [Spark Streaming](http://spark.apache.org/streaming/)
+  -  [kafka Streams](http://docs.confluent.io/3.0.0/streams/)
 
 Streaming Architecure is achived when Stream Processing is applied on events/messages from Messaging Systems.
 
