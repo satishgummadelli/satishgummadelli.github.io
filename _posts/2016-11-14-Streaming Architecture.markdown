@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Streaming Architecture"
+permalink: "/StreamingArchitecture/definition"
+date:   2016-11-14 15:39:33 +0000
+categories: Streaming Architecture and Big Data
+---
+
 # Streaming Architecture
 
 
