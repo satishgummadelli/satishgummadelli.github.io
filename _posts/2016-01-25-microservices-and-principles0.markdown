@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "AWS Training"
+permalink: "/awss/day1"
+date:   2017-01-12 15:39:33 +0000
+categories: AWS
+---
+Cloud Computing is simply Cloud service , is a delivery of on demand computing resources.
+
+- pay for what you use
+- Elastic resources
+- self and Metered services
+- from single machine to data centers in minutes
+
+AWS provides a service-driven application architecture in which you choose a specific service, such as S3, to perform specific tasks, such as to back up files on a hard drive.
+
+### Service Driven application
+Also known as [SOA] - Service Oriented Architecture [reliable, flexible services]
+
+
+#### Software Architecture evolution
+
+client-server -> [SOA] -> [MicroServices]
+
+# Cloud Computing Service Models
+
+Cloud Providers provide their services according to different Models, if we stack layers they are like this
+
+
+
+Layers of service models | examples
+--- |---|
+SaaS |CRM, email, games
+PaaS | databse, webserver, development toolss
+IaaS | Virtual Machines, Network, load balancers
+
+
+## SaaS
+A software distribution service that lets you use applications without actually having the applications installed locally. Another term used to describe this service is software on demand. The host, Provider, maintains the software, provides the required licenses, and does all the other work needed to make the software available.
+SaaS typically keeps the host completely in control and doesn’t offer any sort of monitoring.
+
+### providers:
+Salesforce CRM
+Gmail
+Many Monitoring providers[New Relic]
+Many Database Providers [AWS RDS]
+
+## PaaS
+A platform provides a complete solution for running software in an integrated manner on a particular piece of hardware. For example, Windows is a particular kind of platform. The virtual platform provided by PaaS allows a customer to develop, run, and manage applications of all sorts.
+PaaS is more of a development solution than a production environment solution
+
+### providers:
+RedHat Openshift
+Google App Engine
+Microsoft Azure
+
+
+## IaaS
+A form of cloud computing that provides virtualized computing resources. You essentially use IaaS to replace physical resources, such as servers, with virtual resources hosted and managed by Amazon.
+
+### providers:
+- Amazon AWS
+- Windows Azure
+- Google Compute Engine
+- Rackspace open Cloud
+
+
+
+There are other models like,  DaaS, i.e Database as a service , XaaS everything as a service
+
+# Cloud Computing Deployment Models
+
+- All in the Cloud
+- Hybrid
+- On Premises
+
+
+
+[SOA]:https://en.wikipedia.org/wiki/Service-oriented_architecture
+[MicroServices]:http://satishgummadelli.github.io/microservices/principles
