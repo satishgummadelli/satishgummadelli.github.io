@@ -96,7 +96,6 @@ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zo
 A-Zees are one or more physical data centers that host AWS services on them. Just as with regions, even AZs have corresponding codes to identify them, generally they are regional names followed by a numerical value. For example, if you select and use us-east-1, which is the North Virginia region, then it would have AZs listed as us-east-1b, us-east-1c, us-east-1d, and so on:
 
 
-For Europe
 
 Region | Name | Code
 --- |---| ---|
@@ -115,11 +114,13 @@ Europe| EU (Frankfurt)|eu-central-1
   |Asia Pacific (Seoul)|ap-northeast-2
 
 
-```
+## Note
+
 - AZs are very important from a design and deployment point of view. Being data centers, they are more than capable of failure and downtime, so it is always good practice to distribute your resources across multiple AZs and design your applications such that they can remain available even if one AZ goes completely offline.
 - We have to design and distribute your applications so that they do not suffer any potential outages or failures.
 -  Design for failure and nothing will fail!
-'''
+
+
 
 [SOA]:https://en.wikipedia.org/wiki/Service-oriented_architecture
 [MicroServices]:http://satishgummadelli.github.io/microservices/principles
