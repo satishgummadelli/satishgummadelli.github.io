@@ -25,7 +25,6 @@ AWS provides a service-driven application architecture in which you choose a spe
 - Stop guessing capacity
 - Increase Speed and Agility
 - Focus on Business differentiators
-- Go Global in minutes
 
 
 
@@ -139,6 +138,7 @@ Europe| EU (Frankfurt)|eu-central-1
 
 Exercises:
 1) Continuous Integration tools
+ Hari:
 2) Agile, Scrum, kanban, Lean methodologies
 
 
