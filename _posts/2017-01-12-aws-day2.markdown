@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "AWS Training"
+permalink: "/aws/day2"
+date:   2017-01-12 15:39:33 +0000
+categories: AWS
+---
+
+# AWS S3

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AWS Training"
-permalink: "/awss/day1"
+permalink: "/aws/day1"
 date:   2017-01-12 15:39:33 +0000
 categories: AWS
 ---
@@ -74,7 +74,51 @@ There are other models like,  DaaS, i.e Database as a service , XaaS everything 
 - Hybrid
 - On Premises
 
+# AWS architecture and components
 
+## AWS Regions
+AWS currently has about 10 regions, each containing multiple data centers within themselves
+
+In simple terms, the resources that are geographically close to your organization are served much faster! For example, an organization running predominantly from USA can leverage the USA's regions to host their resources and gain access to them must faster.
+
+```
+AWS does not replicate resources across regions automatically. It is up to the end user to set up the replication process.```
+
+## AWS Availablity Zones
+
+Each region is split up into one or more Availability Zones (AZs) and pronounced as A-Zees. An A Z is an isolated location inside a region. AZs within a particular region connect to other AZs via low-latency links.
+
+For More and Updated information check this link -
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+
+
+A-Zees are one or more physical data centers that host AWS services on them. Just as with regions, even AZs have corresponding codes to identify them, generally they are regional names followed by a numerical value. For example, if you select and use us-east-1, which is the North Virginia region, then it would have AZs listed as us-east-1b, us-east-1c, us-east-1d, and so on:
+
+
+For Europe
+
+Region | Name | Code
+--- |---| ---|
+North America |US East (N. Virginia) |us-east-1
+ | US West (N. California) | us-west-1
+ | US West (Oregon)|us-west-2
+South America|Sao Paulo|sa-east-1
+Europe| EU (Frankfurt)|eu-central-1
+ | EU (Ireland)|eu-west-1
+ | EU (London)|eu-west-2
+ Asia|Asia Pacific (Tokyo)|ap-northeast-1
+  |Asia Pacific (Singapore)|ap-southeast-1
+  |Asia Pacific (Sydney)|ap-southeast-2
+  |Asia Pacific (Beijing)|cn-north-1
+  |Asia Pacific (Mumbai)|ap-south-1
+  |Asia Pacific (Seoul)|ap-northeast-2
+
+
+```
+- AZs are very important from a design and deployment point of view. Being data centers, they are more than capable of failure and downtime, so it is always good practice to distribute your resources across multiple AZs and design your applications such that they can remain available even if one AZ goes completely offline.
+- We have to design and distribute your applications so that they do not suffer any potential outages or failures.
+-  Design for failure and nothing will fail! 
+'''
 
 [SOA]:https://en.wikipedia.org/wiki/Service-oriented_architecture
 [MicroServices]:http://satishgummadelli.github.io/microservices/principles
