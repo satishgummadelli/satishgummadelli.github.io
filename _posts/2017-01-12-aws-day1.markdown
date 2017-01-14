@@ -5,7 +5,9 @@ permalink: "/aws/day1"
 date:   2017-01-12 15:39:33 +0000
 categories: AWS
 ---
-Cloud Computing is simply Cloud service , is a delivery of on demand computing resources.
+# Cloud Computing
+
+ Delivery of on demand computing resources.
 
 - pay for what you use
 - Elastic resources
