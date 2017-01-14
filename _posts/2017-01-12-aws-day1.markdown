@@ -4,6 +4,7 @@ title:  "AWS Introduction"
 permalink: "/aws/day1"
 date:   2017-01-12 15:39:33 +0000
 categories: AWS
+image_path: /_images/AWS-Regions.001.jpg
 ---
 # Cloud Computing
 
@@ -15,6 +16,18 @@ categories: AWS
 - from single machine to data centers in minutes
 
 AWS provides a service-driven application architecture in which you choose a specific service, such as S3, to perform specific tasks, such as to back up files on a hard drive.
+
+## Cloud Computing Advantages
+
+- Global in minutes
+- variable expense
+- Economies of Scale
+- Stop guessing capacity
+- Increase Speed and Agility
+- Focus on Business differentiators
+- Go Global in minutes
+
+
 
 ### Service Driven application
 Also known as [SOA] - Service Oriented Architecture [reliable, flexible services]
@@ -117,6 +130,7 @@ Europe| EU (Frankfurt)|eu-central-1
 
 ![AWS Global Infrastructure](/_images/AWS-Regions.001.jpeg){:class="img-responsive"}
 
+<img src ="{{ image.image_path}}" alt="AWS Infrastructure">
 ## Note
 
 - AZs are very important from a design and deployment point of view. Being data centers, they are more than capable of failure and downtime, so it is always good practice to distribute your resources across multiple AZs and design your applications such that they can remain available even if one AZ goes completely offline.
