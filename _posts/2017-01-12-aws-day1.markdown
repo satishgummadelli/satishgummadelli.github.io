@@ -137,5 +137,11 @@ Europe| EU (Frankfurt)|eu-central-1
 
 
 
+Exercises:
+1) Continuous Integration tools
+2) Agile, Scrum, kanban, Lean methodologies
+
+
+
 [SOA]:https://en.wikipedia.org/wiki/Service-oriented_architecture
 [MicroServices]:http://satishgummadelli.github.io/microservices/principles
