@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AWS Training"
+title:  "AWS Introduction"
 permalink: "/aws/day1"
 date:   2017-01-12 15:39:33 +0000
 categories: AWS
@@ -117,7 +117,7 @@ Europe| EU (Frankfurt)|eu-central-1
 ```
 - AZs are very important from a design and deployment point of view. Being data centers, they are more than capable of failure and downtime, so it is always good practice to distribute your resources across multiple AZs and design your applications such that they can remain available even if one AZ goes completely offline.
 - We have to design and distribute your applications so that they do not suffer any potential outages or failures.
--  Design for failure and nothing will fail! 
+-  Design for failure and nothing will fail!
 '''
 
 [SOA]:https://en.wikipedia.org/wiki/Service-oriented_architecture
