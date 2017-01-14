@@ -82,7 +82,8 @@ AWS currently has about 10 regions, each containing multiple data centers within
 In simple terms, the resources that are geographically close to your organization are served much faster! For example, an organization running predominantly from USA can leverage the USA's regions to host their resources and gain access to them must faster.
 
 ```
-AWS does not replicate resources across regions automatically. It is up to the end user to set up the replication process.```
+AWS does not replicate resources across regions automatically. It is up to the end user to set up the replication process.
+```
 
 ## AWS Availablity Zones
 
