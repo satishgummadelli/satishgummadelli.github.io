@@ -128,9 +128,7 @@ Europe| EU (Frankfurt)|eu-central-1
   |Asia Pacific (Mumbai)|ap-south-1
   |Asia Pacific (Seoul)|ap-northeast-2
 
-![AWS Global Infrastructure](/_images/AWS-Regions.001.jpeg){:class="img-responsive"}
 
-<img src ="{{ image.image_path}}" alt="AWS Infrastructure">
 ## Note
 
 - AZs are very important from a design and deployment point of view. Being data centers, they are more than capable of failure and downtime, so it is always good practice to distribute your resources across multiple AZs and design your applications such that they can remain available even if one AZ goes completely offline.
