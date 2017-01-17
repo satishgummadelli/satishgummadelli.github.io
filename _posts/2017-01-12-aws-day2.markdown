@@ -1,9 +1,88 @@
 ---
 layout: post
-title:  "AWS S3"
+title:  "AWS Infrastructure & Services"
 permalink: "/aws/day2"
 date:   2017-01-12 15:39:33 +0000
 categories: AWS
 ---
 
-# AWS S3
+# AWS architecture and components
+
+*Design for failure and nothing will fail*
+
+AWS EC2 can be hosted in different locations worldwide. These multiple locations are created as regions. Amazon EC2 offers you the flexibility and ability to use resources, such as instances and databases, in multiple regions or geographical locations. However, resources won't be replicated specifically across multiple regions until and unless you do it externally.
+
+Each AWS region is intended to be completely insulated from other AWS regions by geographical location. So this will achieve the
+  - *high availability*
+  - *stability with fault-tolerance*
+
+it is good to deploy your apps as close as possible to your end users. For example, if the majority of your users are from the UK, it would be best to go with the EU (Ireland) region because it is the nearest one. Other points you need to consider when choosing the regions are legal clauses and costs.
+
+
+## Region & Number of Availability Zones
+
+- AWS GovCloud (2)
+- US West: Oregon (3), Northern California (3)
+- US East: Northern Virginia (5), Ohio (3)
+- Canada:Central (2)
+- South America: São Paulo (3)
+- Europe: Ireland (3), Frankfurt (2), London (2)
+- Asia Pacific :Singapore (2), Sydney (3), Tokyo (3), Seoul (2), Mumbai (2)
+- China: Beijing (2)
+
+New Region (coming soon)
+- Paris
+- Ningxia
+
+
+## AWS Regions
+AWS currently has about 10 regions, each containing multiple data centers within themselves
+
+In simple terms, the resources that are geographically close to your organization are served much faster! For example, an organization running predominantly from USA can leverage the USA's regions to host their resources and gain access to them must faster.
+
+```
+AWS does not replicate resources across regions automatically. It is up to the end user to set up the replication process.
+```
+
+## AWS Availablity Zones
+
+Each region is split up into one or more Availability Zones (AZs) and pronounced as A-Zees. An A Z is an isolated location inside a region. AZs within a particular region connect to other AZs via low-latency links.
+
+Every AZ will be running on its own infrastructure environment, with self-governing cooling, network with security, and power. AZs are not affected by common failures such as generators or cooling equipment failure. The great advantage of AZs is that they are physically separated so that disasters such as fire, floods, and tornadoes won't affect more than one AZ.
+
+For More and Updated information check this link -
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+
+
+A-Zees are one or more physical data centers that host AWS services on them. Just as with regions, even AZs have corresponding codes to identify them, generally they are regional names followed by a numerical value. For example, if you select and use us-east-1, which is the North Virginia region, then it would have AZs listed as us-east-1b, us-east-1c, us-east-1d, and so on:
+
+
+
+
+
+Region | Name | Code
+--- |---| ---|
+North America |US East (N. Virginia) |us-east-1
+ | US West (N. California) | us-west-1
+ | US West (Oregon)|us-west-2
+South America|Sao Paulo|sa-east-1
+Europe| EU (Frankfurt)|eu-central-1
+ | EU (Ireland)|eu-west-1
+ | EU (London)|eu-west-2
+ Asia|Asia Pacific (Tokyo)|ap-northeast-1
+  |Asia Pacific (Singapore)|ap-southeast-1
+  |Asia Pacific (Sydney)|ap-southeast-2
+  |Asia Pacific (Beijing)|cn-north-1
+  |Asia Pacific (Mumbai)|ap-south-1
+  |Asia Pacific (Seoul)|ap-northeast-2
+
+
+## Note
+
+- AZs are very important from a design and deployment point of view. Being data centers, they are more than capable of failure and downtime, so it is always good practice to distribute your resources across multiple AZs and design your applications such that they can remain available even if one AZ goes completely offline.
+- We have to design and distribute your applications so that they do not suffer any potential outages or failures.
+-  Design for failure and nothing will fail!
+
+
+# Create AWS account
+https://aws.amazon.com/console/

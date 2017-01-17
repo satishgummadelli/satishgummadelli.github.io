@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "AWS S3"
+permalink: "/aws/day3"
+date:   2017-01-12 15:39:33 +0000
+categories: AWS
+---
+
+# AWS S3
+
+Amazon Simple Storage Service, S3, is a web service that can be used to store and retrieve arbitrary blobs of data. Data stored in S3 can include files of any kind, up to 5 terabytes in size (at the time of writing this), and also raw bytes.
+
+Features:
+- Allows website hosting
+- Scalable
+- Reliable  (99.9 percent)
+- Security
+- Integration
+- Standard interfaces (REST and SOAP)
+- Reduced Redundancy Storage
+- Torrent tracking and seeding
+- Share the data with a temporary URL
+- Logging
+- Versioning
+
+
+## Buckets
+A container in Amazon S3 where the files are uploaded. For using Amazon S3 to store a file, you need to create at least one bucket. Files (objects) are stored in buckets.
+
+Features:
+
+- The bucket name should be unique because it is shared by all users.
+- Buckets can contain logical nested folders and subfolders. But it cannot contain nested buckets.
+- You can create a maximum of 100 buckets in a single account.
+- The bucket name can contain letters, numbers, periods, dash, and the underscore.
+- The bucket name should start with a letter or number, and it should be between 3 to 25 characters long.
+- Buckets can be managed via the following:
+- A bucket doesn't have any size restrictions for the user. It can store objects of any size.
+- Can be accessed via HTTP URLs as follows:
+      - http://< NAME_OF_THE_BUCKET>.s3.amazonaws.com/< OBJECT_NAME >
+      - http://s3.amazonaws.com/< BUCKET_NAME >/< OBJECT_NAME >
+
+# Objects
+An object is a stored file in Amazon S3. Each object consists of a unique identifier, the user who uploaded the object, and permissions for other users to perform CRUD operations on it. Every object is stored in a bucket.
+
+Objects can be managed via the following:
+
+REST-style HTTP interface
+SOAP interface
+Objects can be downloaded via the following:
+
+HTTP GET interface
+BitTorrent protocol
+The bucket can consist of any type of object, be it a PDF, text, video, audio, or any other kind of files.
+Maximum of 100 buckets in a single account.
+
+## Keys
+While creating an object, a key will be assigned to the object. This key will be used for retrieving the object. The key should have the following features:
+
+`` Be unique in the bucket
+Contain alphabets, numbers, and special characters such as-, !, _, ., *, ', (, and ) ``
+
+
+## S3 vs EBS
+
+ S3 is also significantly cheaper than EBS; however, it does not offer a filesystem layer but rather a REST API. Another difference is that while EBS volumes can only be attached to a single running instance at a time, S3 objects can be shared among as many instances as we want, and depending on the desired permission policy, they can be accessed from anywhere on the Internet.
