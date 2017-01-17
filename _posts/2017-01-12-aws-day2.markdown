@@ -86,3 +86,53 @@ Europe| EU (Frankfurt)|eu-central-1
 
 # Create AWS account
 https://aws.amazon.com/console/
+
+
+
+## AWS Services by categories
+
+
+### Compute
+
+
+- Elastic Compute Cloud (EC2): When it comes to brute computation power and scalability, there must be very few cloud providers out there in the market that can match AWS's EC2 service. EC2 or Elastic Compute Cloud is a web service that provides flexible, resizable, and secure compute capacity on an on-demand basis. AWS started off with EC2 as one of its core services way back in 2006 and has not stopped bringing changes and expanding the platform ever since. The compute infrastructure runs on a virtualized platform that predominantly consists of the open sourced Xen virtualization engine. We will be exploring EC2 and its subsequent services in detail in the coming chapters.
+- EC2 Container Service: A recently launched service, the EC2 Container Service, allows you to easily run and manage docker containers across a cluster of specially created EC2 instances.
+- Amazon Virtual Private Cloud (VPC): VPC enables you to create secure, fully customizable, and isolated private clouds within AWS's premises. They provide additional security and control than your standard EC2 along with connectivity options to on premise data centers.
+
+### Storage
+
+- Simple Storage Service (S3): S3 is a highly reliable, fault tolerant, and fully redundant data storage infrastructure provided by AWS. It was one of the first services offered by AWS way back in 2006, and it has not stopped growing since. As of April 2013, an approximate 2 trillion objects have been uploaded to S3, and these numbers are growing exponentially each year.
+- Elastic Block Storage (EBS): EBS is a raw block device that can be attached to your compute EC2 instances to provide them with persistent storage capabilities.
+- Amazon Glacier: It is a similar service offering to S3. Amazon Glacier offers long-term data storage, archival, and backup services to its customers.
+- Amazon Elastic File System: Yet another very recent service offering introduced by AWS, Elastic File System (EFS) provides scalable and high-performance storage to EC2 compute instances in the form of an NFS filesystem.
+
+### Databases
+
+- Amazon Relational Database Service (RDS): RDS provides a scalable, high-performance relational database system such as MySQL, SQL Server, PostgreSQL, and Oracle in the cloud. RDS is a completely managed solution provided by AWS where all the database heavy lifting work is taken care of by AWS.
+- Amazon DynamoDB: DynamoDB is a highly scalable NoSQL database as a service offering provided by AWS.
+- Amazon Redshift: Amazon Redshift is a data warehouse service that is designed to handle and scale to petabytes of data. It is primarily used by organizations to perform real-time analytics and data mining.
+
+### Networking
+This includes the following services:
+
+- Elastic Load Balancer (ELB): ELB is a dynamic load balancing service provided by AWS used to distribute traffic among EC2 instances. You will be learning about ELB a bit more in detail in subsequent chapters.
+- Amazon Route 53: Route 53 is a highly scalable and available DNS web service provided by AWS. Rather than configuring DNS names and settings for your domain provider, you can leverage Route 53 to do the heavy lifting work for you.
+
+### Distributed computing and analytics
+
+- Amazon Elastic MapReduce (EMR): As the name suggests, this service provides users with a highly scalable and easy way to distribute and process large amounts of data using Apache's Hadoop. You can integrate the functionalities of EMR with Amazon S3 to store your large data or with Amazon DynamoDB as well.
+- Amazon Redshift: This is a massive data warehouse that users can use to store, analyze, and query petabytes of data.
+
+
+### Content distribution and delivery
+- Amazon CloudFront is basically a content delivery web service that can be used to distribute various types of content, such as media, files, and so on, with high data transfer speeds to end users globally. You can use CloudFront in conjunction with other AWS services such as EC2 and ELB as well.
+
+### Workflow and messaging
+
+- Amazon Simple Notification Service (SNS): SNS is a simple, fully managed push messaging service provided by AWS. You can use it to push your messages to mobile devices (SMS service) and even to other AWS services as API calls to trigger or notify certain activities.
+- Amazon Simple Email Service (SES): As the name suggests, SES is used to send bulk e-mails to various recipients. These e-mails can be anything, from simple notifications to transactions messages, and so on. Think of it as a really large mail server that can scale as per your requirements and is completely managed by AWS! Awesome, isn't it!
+Monitoring
+- Amazon CloudWatch is a monitoring tool provided by AWS that you can use to monitor any and all aspects of your AWS environment, from EC2 instances to your RDS services to the load on your ELBs, and so on. You can even create your own metrics, set thresholds, create alarms, and a whole lot of other activities as well.
+
+###  Identity and access management
+AWS provides a rich set of tools and services to secure and control your infrastructure on the cloud. The most important and commonly used service for this is identity and access management (IAM). Using IAM, you can, as an organizational administrator, create and manage users, assign them specific roles and permissions, and manage active directory federations as well. We will be using a lot of IAM in the next chapter, which covers this topic in greater depth.
