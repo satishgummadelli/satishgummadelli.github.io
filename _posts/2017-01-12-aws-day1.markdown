@@ -93,10 +93,12 @@ There are other models like,  DaaS, i.e Database as a service , XaaS everything 
 
 Exercises:
 1) Continuous Integration tools
- Hari: Jenkins, Bamboo, Teamcity, Travis CI, GO CD. 
+ Hari: Jenkins, Bamboo, Teamcity, Travis CI, GO CD.
  Krishna:
 2) Agile, Scrum, Kanban, Lean methodologies
 Hari:
+Agile describes a set of principles for software developement under which requirements and solutions eveolve through the collaborative effort of self-organizing cross-functional teams. It advocates planning, eveolutionary development, early delivery, and continuous improvement, and it encourages rapid and flexible response to change. These principles support the definition and continuing evelution of many software development methods.
+
 Krishna:
 3) SOA, Microservices, REST
 
