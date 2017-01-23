@@ -93,7 +93,7 @@ There are other models like,  DaaS, i.e Database as a service , XaaS everything 
 
 Exercises:
 1) Continuous Integration tools
- Hari:
+ Hari: Jenkins. Bamboo
  Krishna:
 2) Agile, Scrum, Kanban, Lean methodologies
 Hari:
