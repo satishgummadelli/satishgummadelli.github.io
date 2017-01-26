@@ -1,0 +1,48 @@
+Class A : 0--- : If the first bit of an IPv4 address is "0",
+this means that the address is part of class A. This means that any address from 0.0.0.0 to 127.255.255.255 is in class A.
+
+    from:      0.  0.  0.  0 = 00000000.00000000.00000000.00000000
+      to:    127.255.255.255 = 01111111.11111111.11111111.11111111
+                               0nnnnnnn.HHHHHHHH.HHHHHHHH.HHHHHHHH
+
+Class B : 10-- : Class B includes any address from 128.0.0.0 to 191.255.255.255.
+This represents the addresses that have a "1" for their first bit, but don't have a "1" for their second bit.
+
+    from:      128.  0.  0.  0 = 10000000.00000000.00000000.00000000
+      to:      191.255.255.255 = 10111111.11111111.11111111.11111111
+                                 10nnnnnn.nnnnnnnn.HHHHHHHH.HHHHHHHH
+
+Class C
+    110- : Class C is defined as the addresses ranging from 192.0.0.0 to 223.255.255.255.
+ This represents all of the addresses with a "1" for their first two bits, but without a "1" for their third bit.
+
+
+    from:      192.  0.  0.  0 = 11000000.00000000.00000000.00000000
+      to:      223.255.255.255 = 11011111.11111111.11111111.11111111
+                                 110nnnnn.nnnnnnnn.nnnnnnnn.HHHHHHHH
+
+Class D
+      1110 : This class includes addresses that have "111" as their first three bits, but a "0" for the next bit.
+      This address range includes addresses from 224.0.0.0 to 239.255.255.255.
+    from:      224.  0.  0.  0 = 11100000.00000000.00000000.00000000
+      to:      239.255.255.255 = 11101111.11111111.11111111.11111111
+                                 1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX
+
+Class E
+  1111 : This class defines addresses between 240.0.0.0 and 255.255.255.255.
+    Any address that begins with four "1" bits is included in this class.
+    from:      240.  0.  0.  0 = 11110000.00000000.00000000.00000000
+      to:      255.255.255.255 = 11111111.11111111.11111111.11111111
+                                 1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX
+
+
+Class A addresses, the addresses from 10.0.0.0 to 10.255.255.255 are reserved for private network assignment.
+For class B, this range is 172.16.0.0 to 172.31.255.255.
+
+For class C, the range of 192.168.0.0 to 192.168.255.255 is reserved for private usage.
+
+
+
+The process of dividing a network into smaller network sections is called subnetting.
+
+This can be useful for many different purposes and helps isolate groups of hosts together and deal with them easily.
